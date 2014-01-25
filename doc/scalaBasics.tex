@@ -1,0 +1,76 @@
+\documentclass[fontsize=16pt, parskipp=full, paper=legal]{scrbook}
+\usepackage{fontspec, xltxtra, xunicode}
+\setromanfont[Scale=MatchLowercase,Mapping=tex-text]{Minion Pro}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{DejaVu Sans}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+\usepackage[fixamsmath, centertags]{mathtools}
+\usepackage{booktabs}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+
+\usepackage[cm]{fullpage}
+
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{colorlinks, urlcolor=blue, citecolor=blue}
+
+\usepackage{verbments}
+\DefineShortVerb{\¬}
+\plset{
+  language=scala,
+  encoding=utf8,
+  captionfont=\sffamily,
+  numbers=left,
+  numbersep=5pt,
+  style=monokai, %tango,
+  bgcolor=darkgray, %white,
+  fvset={frame=lines, fontseries=bx, samepage=true}
+}
+%frame=lines, framerule=1pt, rulecolor=\color{black}
+%baselinestretch=0.8},
+%texcl=true,
+%numbers=none,
+%numbersep=5pt,
+%belowcaptionskip=-8pt,
+
+\usepackage{hyperref}
+\hypersetup{
+  linktocpage,
+  colorlinks,
+  citecolor=blue,
+  filecolor=black,
+  linkcolor=blue,
+  urlcolor=blue
+}
+
+\usepackage{graphicx}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+\title{Basic programmig with Scala}
+\author{M.C. Oscar Vargas Torres}
+\begin{document}
+\maketitle
+
+\chapter{First steps}
+
+\section{Your development environment for this course}
+I recommend you to install these:
+\begin{itemize}
+\item Latest IntelliJ IDEA EAP version from here:\\
+ \url{http://confluence.jetbrains.com/display/IDEADEV/IDEA+13+EAP}
+\item Java 8 (the current java source code requires JDK 8) from here:\\
+ \url{https://jdk8.java.net/download.html}
+\item sbt (one of the Scala build tools available) following the
+  instructions here:\\
+ \url{http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html}
+\item git for your OS of choice.
+\end{itemize}
+
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
