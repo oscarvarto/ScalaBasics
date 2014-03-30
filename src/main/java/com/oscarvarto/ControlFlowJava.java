@@ -10,14 +10,8 @@ import static java.util.stream.Collectors.toList;
  */
 public class ControlFlowJava {
     public static void main(String[] args) {
-      /*
-      for (int i= 0; i < 5; i++) {
-          System.out.println(i);
-      }
-      */
-
       List<Integer> xs = Arrays.asList(1, 2, 3, 4, 5);
-      List<Integer> ys = new ArrayList<Integer>();
+      List<Integer> ys = new ArrayList<>();
       for (int x: xs) {
         ys.add(x * 2);
       }
